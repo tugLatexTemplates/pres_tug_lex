@@ -1,0 +1,145 @@
+
+\documentclass{beamer}
+% \documentclass[aspectratio=169]{beamer}
+% \usetheme[institute]{tugraz2013} %\ mit blauem Logo
+\usetheme{tugraz2013} %\ ohne blauem Logo
+% \usetheme[notes]{tugraz2013}
+% \usetheme[minimal]{tugraz2013}
+
+\title[Title]{Title\\}
+\author{Author}
+\date{\today}
+\institute[Institute for XY]{Institute for XY\\ Working Group X Y}
+\instituteurl{www.iti.tugraz.at}
+\institutelogo{iti.pdf}
+% \additionallogo{institutslogo.pdf}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\titleframe
+
+\begin{frame}
+  \frametitle{Content}
+  \tableofcontents%[hideallsubsections] 
+  \note{
+  	Meine Präsentation ist wie folgt strukturiert \ldots
+  }
+\end{frame}
+
+
+\section{Introduction}
+\begin{frame}
+	\frametitle{Ziele der ersten Vorlesung}
+	Einführung in die KORE
+	\begin{itemize}
+		\item Geschichte der KORE kennen lernen
+		\item Aufgaben der KORE und Einordnung in das betriebliche Rechnungswesen verstehen
+		\item Wertebenen im Rechnungswesen unterscheiden
+	\end{itemize}
+	
+	Grundlagen der KORE
+	\begin{itemize}
+		\item Kostenwürfel als Hilfsmittel verwenden
+		\item Überleitung von externem zu internem Rechnungswesen durchführen
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Titel der Folie\\maximal zwei Zeilen}
+	Text Ebene 1
+	\begin{itemize}
+		\item Zweite Ebene
+		\begin{itemize}
+			\item Dritte Ebene
+			\begin{itemize}
+				\item Vierte Ebene
+			\end{itemize}
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Aufzählungen}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Formeln und Links}
+\begin{frame}
+	\frametitle{Formeln und Links}
+	Eine Formel:
+	\begin{eqnarray*}
+	u(x,t) & = & \sum_{k=1}^{\infty} f_k \sin \frac{k \pi x}{L} \cos 
+				 \frac{k \pi t}{aL} + \\
+		   & + & \sum_{k=1}^{\infty} g_k \sin \frac{k \pi x}{L} \sin 
+				 \frac{k \pi t}{aL} \\
+	\end{eqnarray*}
+
+	Ein Link:
+	\begin{center}
+		\url{http://www.iti.tugraz.at}		
+	\end{center}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Quelltexte}
+\begin{frame}[fragile]
+	\frametitle{Quelltexte}
+	\begin{spacing}{1}
+	\begin{semiverbatim}
+SUCHE (A,x)
+1: i = 0
+2: WHILE i<n
+3:     i = i+1
+4:     \alert{IF A[i]=x THEN RETURN i}
+5: ELSE RETURN -1
+	\end{semiverbatim}
+	\end{spacing}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Spalten und Grafiken}
+\begin{frame}
+	\frametitle{Zwei Inhalte Links/Rechts\\Wahlweise Text/Grafik}
+	\begin{columns}[onlytextwidth]
+		\begin{column}{0.5\textwidth}
+			\begin{itemize}
+				\item Lorem ipsum dolor sit amet, consectetur 
+				\item adipisicing elit, sed do eiusmod tempor 
+				\item incididunt ut labore et dolore magna aliqua. 
+				\item Ut enim ad minim veniam, quis nostrud 
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\begin{center}
+			\includegraphics[width=0.5\textwidth]{logo.pdf}\\
+			Grafik in Spalte 2
+			\end{center}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\section{Weitere Beispielfolien}
+
+\begin{frame}
+	\frametitle{Nur Titel \\maximal 2-zeilig}
+\end{frame}
+
+\sectionheader[Untertitel]{Abschnittsbeginn}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Summary}
+%%%%%%%%%%%%%%%%%%/%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+	\frametitle{Summary}
+	\begin{itemize}
+		\item Punkt 1
+		\item Punkt 2
+		\item Punkt 3
+	\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
