@@ -25,4 +25,3 @@ script:
   - pdflatex -halt-on-error -interaction nonstopmode praesentation2013-standard &&
     pdflatex -halt-on-error -interaction nonstopmode praesentation2013-standard &&
     pdflatex -halt-on-error -interaction nonstopmode praesentation2013-standard
-Contact GitHub API Training Shop Blog About
